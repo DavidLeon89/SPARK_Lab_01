@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="4">
+<prover id="0" name="CVC4" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="0"/>
+<prover id="1" name="CVC4_CE" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="0"/>
+<file name="..\example.mlw" proved="true">
+<theory name="Example__package_def" proved="true">
+ <goal name="WP_parameter def" expl="VC for def" proved="true">
+ <transf name="split_goal_wp_conj" proved="true" >
+ </transf>
+ </goal>
+</theory>
+<theory name="Example__max__subprogram_def" proved="true">
+ <goal name="WP_parameter def" expl="VC for def" proved="true">
+ <transf name="split_goal_wp_conj" proved="true" >
+  <goal name="WP_parameter def.0" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="43"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="34"/></proof>
+  <transf name="split_disj" >
+   <goal name="WP_parameter def.0.0" expl="postcondition">
+   </goal>
+   <goal name="WP_parameter def.0.1" expl="postcondition">
+   <proof prover="1" obsolete="true"><result status="unknown" steps="28"/></proof>
+   </goal>
+   <goal name="WP_parameter def.0.2" expl="postcondition">
+   <proof prover="1" obsolete="true"><result status="unknown" steps="28"/></proof>
+   </goal>
+   <goal name="WP_parameter def.0.3" expl="postcondition">
+   </goal>
+  </transf>
+  </goal>
+  <goal name="WP_parameter def.1" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="40"/></proof>
+  </goal>
+  <goal name="WP_parameter def.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="31"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="56"/></proof>
+  <transf name="split_disj" >
+   <goal name="WP_parameter def.2.0" expl="postcondition">
+   <proof prover="1" obsolete="true"><result status="failure"/></proof>
+   </goal>
+   <goal name="WP_parameter def.2.1" expl="postcondition">
+   <proof prover="1" obsolete="true"><result status="unknown" steps="18"/></proof>
+   </goal>
+   <goal name="WP_parameter def.2.2" expl="postcondition">
+   </goal>
+   <goal name="WP_parameter def.2.3" expl="postcondition">
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

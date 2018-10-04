@@ -1,0 +1,18 @@
+project Default is
+
+   for Source_Dirs use ("src");
+   for Exec_Dir use ".";
+   for Object_Dir use "obj";
+   for Main use ("test_example.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-gnatwa", "-gnata", "-gnat12", "-g", "-gnateE", "-gnato", "-fstack-check");
+      --  For SPARK the code will be compiled at maximum warning level
+   end Compiler;
+
+   package Linker is
+      for Default_Switches ("ada") use ("-g");
+   end Linker;
+
+end Default;
+

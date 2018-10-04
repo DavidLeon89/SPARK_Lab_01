@@ -1,0 +1,75 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -gnata
+A -gnat12
+A -g
+A -gnateE
+A -gnato
+A -fstack-check
+A -gnatc
+P GP FX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U test_example%b	test_example.adb	12a8c1f6 OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W example%s		example.adb		example.ali
+Z system%s		system.ads		system.ali
+W test_assertions%s	test_assertions.adb	test_assertions.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D example.ads		20180927121456 d7e65f7d example%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20180927114022 c1dd7c95 test_assertions%s
+D test_example.adb	20180927120738 8c8e5144 test_example%b
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r28
+X 4 a-textio.ads
+49K13*Text_IO 471e16 14|1w10 1r32
+263U14*Put_Line 14|13s10 15s10 24s10 26s10 35s10 37s10 41s4
+X 5 example.ads
+1K9*Example 10e12 14|2w6 2r28
+5V13*Max{integer} 14|10s20 21s20 32s20
+X 13 test_assertions.ads
+3K9*Test_Assertions 18e20 14|3w6 3r28
+4X4*Assertion_Error 14|12r12 23r12 34r12
+12U14*Assert_True 14|10s7 21s7 32s7
+X 14 test_example.adb
+5U11*Test_Example 5b11 45l5 45t17
+7U14 Test_1 16l8 16t14 42s4
+8a7 Msg{string} 10r41 13r20 15r20
+18U14 Test_2 27l8 27t14 43s4
+19a7 Msg{string} 21r41 24r20 26r20
+29U14 Test_3 38l8 38t14 44s4
+30a7 Msg{string} 32r41 35r20 37r20
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS test_example__test_1 0
+GG EK_GLOBALS test_example__test_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 example__max test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_example__test_2 0
+GG EK_GLOBALS test_example__test_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 example__max test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_example__test_3 0
+GG EK_GLOBALS test_example__test_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 example__max test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_example 0
+GG EK_GLOBALS test_example local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put_line__2 example__max test_assertions__assert_true__2 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
